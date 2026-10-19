@@ -1,4 +1,8 @@
 /* ===== BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,7 +14,7 @@ main {
   padding: 20px;
 }
 
-
+/* ===== NAVBAR ===== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +34,7 @@ main {
   font-size: 16px;
 }
 
-
+/* ===== FILTROS ===== */
 .botones {
   text-align: center;
   margin-bottom: 20px;
@@ -44,6 +48,8 @@ main {
   background-color: white;
   color: #1a3a6b;
   cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 .botones button:hover {
@@ -51,7 +57,75 @@ main {
   color: white;
 }
 
+/* ===== GALERIA ===== */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
 
+.card {
+  color: #1a3a6b;
+  width: 160px;
+  height: 200px;
+  position: relative;
+  perspective: 800px;
+  cursor: pointer;
+}
+
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #1a3a6b;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: transform 0.6s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* FLIP */
+.card div:last-child {
+  transform: rotateY(180deg);
+}
+
+.card.volteada div:first-child {
+  transform: rotateY(180deg);
+}
+
+.card.volteada div:last-child {
+  transform: rotateY(0deg);
+}
+
+/* CONTENIDO DE CARDS */
+.card h2 {
+  font-size: 4rem;
+  margin: 40px 0 0;
+}
+
+.card img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin-top: 15px;
+}
+
+.card p {
+  margin: 8px 0 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* CLASE PARA JS*/
+.oculta {
+  display: none !important;
+}
+
+/* ===== FOOTER ===== */
 footer {
   background-color: #1a3a6b;
   color: white;
