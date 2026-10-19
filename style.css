@@ -1,0 +1,80 @@
+/* ===== BASE ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #222222;
+}
+
+main {
+  padding: 20px;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1a3a6b;
+  color: white;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar .progreso {
+  margin: 0;
+  font-size: 16px;
+}
+
+
+.botones {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botones button {
+  padding: 8px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  border: 1px solid #1a3a6b;
+  background-color: white;
+  color: #1a3a6b;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background-color: #1a3a6b;
+  color: white;
+}
+
+
+footer {
+  background-color: #1a3a6b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.equipo h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.equipo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.equipo li {
+  margin: 4px 0;
+}
+
+.creditos {
+  margin: 15px 0 0 0;
+  font-size: 13px;
+}
