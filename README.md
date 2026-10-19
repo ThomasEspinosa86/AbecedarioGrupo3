@@ -1,5 +1,5 @@
 # AbecedarioGrupo3
-# tegrantes:
+# integrantes:
 # Thomas Espinosa
 # Isaac Alarcon
 # jonathan Lozano
